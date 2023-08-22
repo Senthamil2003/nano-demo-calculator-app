@@ -14,15 +14,15 @@ baseRouter.get('/greeting', (req, res) => {
 });
 
 baseRouter.post('/add', (req, res) => {
-    let a=req.query.num1;
-    let b=req.query.num2;
+    let a=req.query.first;
+    let b=req.query.second;
     res.json({ "result": Number(a)+Number(b)});
 });
 
 
 baseRouter.post('/subtract', (req, res) => {
-    let a=req.query.num1;
-    let b=req.query.num2;
+    let a=req.query.first;
+    let b=req.query.second;
     res.json({ "result": Number(a)-Number(b) });
 });
 
