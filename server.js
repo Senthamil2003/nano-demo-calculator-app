@@ -26,7 +26,7 @@ baseRouter.post('/subtract', (req, res) => {
     res.json({ "result": Number(a)-Number(b) });
 });
 
-app.use(baseUrl, baseRouter);
+app.use(baseUrl, baseRouter); 
 app.listen(PORT, () => {
     console.log("Server running at PORT", PORT);
 });
